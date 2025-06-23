@@ -417,7 +417,7 @@ body {
 .testimonial {
   justify-content: center;
   padding: 190px;
-  font-family: 10px Rubik, sans-serif;
+  /* font-family: 10px Rubik, sans-serif; */
 }
 .once-font {
   margin-bottom: 96px;
