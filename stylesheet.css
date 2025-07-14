@@ -1267,7 +1267,7 @@ body {
     transition: margin-top 0.3s ease; /* Place transition here */
   }
   .meals {
-    font-size: 20px;
+    font-weight: 20px;
   }
   .app-screen-2-img {
     width: 113px;
