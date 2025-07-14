@@ -1279,6 +1279,7 @@ body {
     height: 180px;
     width: 180px;
     border-radius: 90px;
+    margin-top: 40px;
   }
   .icon-app_inner {
     display: flex;
