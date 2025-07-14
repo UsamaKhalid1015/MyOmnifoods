@@ -1266,9 +1266,9 @@ body {
     overflow: hidden;
     transition: margin-top 0.3s ease; /* Place transition here */
   }
-  /* .meals {
-    font-size: 25px;
-  } */
+  .meals {
+    font-size: 20px;
+  }
   .app-screen-2-img {
     width: 113px;
     height: 229px;
