@@ -98,11 +98,32 @@ body {
 .heading-images {
   margin-left: 70px;
   line-height: 1.5;
+  position: relative;
+  animation-name: image1;
+  animation-duration: 3s;
+
+  animation-fill-mode: forwards;
 }
 
 .image1 {
   padding: 15px;
   height: 500px;
+  position: relative;
+  animation-name: image1;
+  animation-duration: 3s;
+
+  animation-fill-mode: forwards;
+}
+#image1 {
+  animation-timing-function: ease;
+}
+@keyframes image1 {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0px;
+  }
 }
 .btn1 {
   background-color: #ff8c00;
@@ -117,6 +138,7 @@ body {
   font-size: 20px;
   font-family: inherit;
   transition: all 0.3s;
+  user-select: none;
 }
 .btn1:hover {
   background-color: #e67e22;
@@ -136,6 +158,7 @@ body {
   transition: all 0.3s;
   margin-left: 15px;
   border: 3px solid white;
+  user-select: none;
 }
 .btn2:hover {
   background-color: #fdf2e9;
@@ -207,6 +230,10 @@ body {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  position: relative;
+  animation-name: image1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .container2 {
   display: flex;
@@ -219,6 +246,10 @@ body {
   display: flex;
   gap: 100px;
   justify-content: space-around;
+  position: relative;
+  animation-name: image1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 
 .img-section-2 {
@@ -230,9 +261,10 @@ body {
   opacity: 50%;
 }
 .main-div div header {
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
+
 .container3 {
   position: relative;
   padding: 96px 0px;
@@ -269,6 +301,7 @@ body {
 
 .opacitiy {
   /* opacity: 0.1; */
+  position: relative;
   font-size: 86px;
   font-weight: 600;
   color: #ddd;
@@ -279,6 +312,7 @@ body {
   color: #333;
   margin-bottom: 40px;
   letter-spacing: -0.5px;
+  position: relative;
 }
 .never-again {
   display: block;
@@ -291,6 +325,36 @@ body {
   font-size: 18px;
   max-width: 500px;
   color: #555;
+  position: relative;
+}
+
+.opacitiy1 {
+  /* opacity: 0.1; */
+  position: relative;
+  font-size: 86px;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+.h1-font2 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+  position: relative;
+}
+.never-again1 {
+  display: block;
+  margin-inline-start: 18px;
+  margin-inline-end: 18px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  line-height: 1.75;
+  font-size: 18px;
+  max-width: 500px;
+  color: #555;
+  position: relative;
 }
 .app-screen2-approve {
   display: flex;
@@ -310,6 +374,10 @@ body {
   height: 300px;
   width: 300px;
   border-radius: 150px;
+  position: relative;
+  animation-name: aapicon;
+  animation-duration: 3s;
+  animation-timing-function: ease;
 }
 .icon-app_inner {
   display: flex;
@@ -319,11 +387,67 @@ body {
   height: 230px;
   width: 230px;
   border-radius: 125px;
+  position: relative;
+  animation-name: aapicon;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
 
 .under-appscreen {
   display: block;
+  position: relative;
   unicode-bidi: isolate;
+  animation: mymove 3s;
+  animation-fill-mode: forwards;
+}
+
+#div1 {
+  animation-timing-function: ease;
+}
+#div2 {
+  animation-name: appicon1;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+#div3 {
+  animation-name: appicon2;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+@keyframes mymove {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes aapicon {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
+}
+@keyframes appicon1 {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 0px;
+  }
+}
+@keyframes appicon2 {
+  from {
+    right: -300px;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 .app-screen-2-img {
@@ -337,6 +461,10 @@ body {
 }
 .meals-omni {
   text-align: center;
+  position: relative;
+  animation-name: image1;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .h1-font3 {
   font-size: 40px;
@@ -360,6 +488,10 @@ body {
   justify-content: center;
   gap: 50px;
   padding: 80px;
+  position: relative;
+  animation-name: three-meals;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .work-with {
   display: flex;
@@ -374,7 +506,23 @@ body {
   border-radius: 11px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   overflow: hidden;
-  transition: margin-top 0.3s ease; /* Place transition here */
+  transition: margin-top 0.3s ease;
+  position: relative;
+  animation-name: three-meals;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+#three-meals {
+  animation-timing-function: ease;
+}
+@keyframes three-meals {
+  from {
+    bottom: -100px;
+  }
+  to {
+    bottom: 0px;
+  }
 }
 .under-image {
   padding: 32px 48px 48px;
@@ -510,6 +658,10 @@ body {
 .div-under-sec {
   display: flex;
   flex: 1;
+  position: relative;
+  animation-name: three-meals;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .image-testimonial {
   flex: 1;
@@ -573,6 +725,10 @@ body {
   flex: 1;
   font-size: 10px;
   padding: 96px 0px;
+  position: relative;
+  animation-name: three-meals;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
 }
 .pricing {
   max-width: 1200px;
@@ -717,6 +873,21 @@ body {
   background-color: #ff8c00;
   justify-content: center;
   gap: 40px;
+  position: relative;
+  animation-name: eating;
+  animation-duration: 3s;
+  /* animation-fill-mode: forwards; */
+}
+#eating {
+  animation-fill-mode: forwards;
+}
+@keyframes eating {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0px;
+  }
 }
 .name-email {
   display: flex;

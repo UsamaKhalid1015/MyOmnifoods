@@ -32,8 +32,8 @@
     <!-- 1st section start -->
     <section class="healthy-section">
       <div class="section">
-        <div class="heading-images">
-          <h1 class="bold-font">
+        <div class="heading-images" id="images1">
+          <h1 class="bold-font" id="font">
             <strong
               >A healthy meal <br />
               delivered to your door, <br />every single day</strong
@@ -46,12 +46,20 @@
           </p>
           <br />
           <div class="btn-div">
-            <a class="btn1">Start easting well</a>
-            <a class="btn2">Learn more</a>
+            <a class="btn1" id="start-btn" onclick="myfunction()"
+              >Start eating well</a
+            >
+            <a
+              onclick="document.getElementById('cus').src='customer-2.jpg'"
+              class="btn2"
+              >Learn more</a
+            >
           </div>
 
           <div class="customer-image">
-            <div><img src="customer-1.jpg" class="customer1-image" /></div>
+            <div>
+              <img src="customer-1.jpg" class="customer1-image" id="cus" />
+            </div>
             <div><img src="customer-2.jpg" class="customer2-image" /></div>
             <div><img src="customer-3.jpg" class="customer3-image" /></div>
             <div><img src="customer-4.jpg" class="customer4-image" /></div>
@@ -63,7 +71,7 @@
           </div>
         </div>
         <div>
-          <img src="hero.webp" class="image1" />
+          <img src="hero.webp" class="image1" id="image1" />
         </div>
       </div>
     </section>
@@ -71,9 +79,9 @@
     <section class="container2">
       <div class="main-div">
         <div>
-          <h3 class="featured">AS FEATURED IN</h3>
+          <h3 class="featured" id="image1">AS FEATURED IN</h3>
         </div>
-        <div class="tbtfu">
+        <div class="tbtfu" id="image1">
           <div><img src="techcrunch.png" class="img-section-2" /></div>
           <div><img src="business-insider.png" class="img-section-2" /></div>
           <div><img src="the-new-york-times.png" class="img-section-2" /></div>
@@ -96,7 +104,7 @@
       <!-- 2nd div start -->
       <div class="div-how-works">
         <div class="app-screen2-approve">
-          <div class="under-appscreen">
+          <div class="under-appscreen" id="div1">
             <h2 class="opacitiy">01</h2>
 
             <h1 class="h1-font1">Tell us what you like (and what not)</h1>
@@ -108,7 +116,7 @@
               matter what diet you follow!
             </p>
           </div>
-          <div class="icon-app">
+          <div class="icon-app" id="div1">
             <div class="icon-app_inner">
               <img src="app-screen-1.png" class="app-screen-2-img" />
             </div>
@@ -116,15 +124,15 @@
         </div>
         <!-- 3rd div start -->
         <div class="app-screen2-approve">
-          <div class="icon-app">
-            <div class="icon-app_inner">
+          <div class="icon-app" id="div2">
+            <div class="icon-app_inner" id="div2">
               <img src="app-screen-2.png" class="app-screen-2-img" />
             </div>
           </div>
-          <div>
-            <h2 class="opacitiy">02</h2>
-            <h1 class="h1-font2">Approve your weekly meal plan</h1>
-            <p class="never-again">
+          <div id="div3">
+            <h2 class="opacitiy1" id="div3">02</h2>
+            <h1 class="h1-font2" id="div3">Approve your weekly meal plan</h1>
+            <p class="never-again1" id="div3">
               Once per week, approve the meal plan generated for you by Omnifood
               AI. You can change ingredients, swap entire meals, or even add
               your own recipes.
@@ -134,10 +142,10 @@
         <!-- 4th div starts -->
 
         <div class="app-screen2-approve">
-          <div>
-            <h2 class="opacitiy">03</h2>
-            <h1 class="h1-font2">Receive meals at convenient time</h1>
-            <p class="never-again">
+          <div id="div2">
+            <h2 class="opacitiy" id="div2">03</h2>
+            <h1 class="h1-font1" id="div2">Receive meals at convenient time</h1>
+            <p class="never-again" id="div2">
               Best chefs in town will cook your selected meal every day, and we
               will deliver it to your door whenever works best for you. You can
               change delivery schedule and address daily!
@@ -164,7 +172,7 @@
           <h1 class="h1-font3">Omnifood AI chooses from 5,000+ recipes</h1>
         </div>
         <!-- 2nd main div -->
-        <div class="meals-three">
+        <div class="meals-three" id="three-meals">
           <div class="under-three-meals">
             <div>
               <img src="meal-1.jpg" class="meals-image1" />
@@ -269,7 +277,7 @@
     </section>
     <!-- 5th section starts -->
     <section class="container5">
-      <div class="div-under-sec">
+      <div class="div-under-sec" id="three-meals">
         <div class="testimonial">
           <div>
             <h1 id="section5">
@@ -393,7 +401,7 @@
     </section>
     <!-- 6th section starting -->
     <section class="container6">
-      <div class="pricing-section">
+      <div class="pricing-section" id="three-meals">
         <div class="pricing">
           <h1 id="section6">
             <a href="#section1" class="anchor"
@@ -525,7 +533,7 @@
 
     <!-- 7th section starting -->
     <section class="container7">
-      <div class="in-section7">
+      <div class="in-section7" id="eating">
         <div class="form-para">
           <div class="div-heading">
             <h1 class="h1-free">Get your first meal for free!</h1>
@@ -578,127 +586,114 @@
               </div>
             </div>
           </form>
-
-          <!-- <form action="">
-            <div class="form-value">
-              <div class="name-email">
-                <div>
-                  <label for="Full Name">Full Name</label><br />
-                  <input
-                    placeholder="John smith"
-                    type="text"
-                    id="Full Name"
-                    name="Full Name"
-                  />
-                </div>
-                <div>
-                  <label for="Email Address">Email Address</label><br />
-                  <input
-                    placeholder="John@example.com"
-                    type="text"
-                    id="Email Address"
-                    name="Email Address"
-                  />
-                </div>
-              </div>
-              <div class="signup-where">
-                <div>
-                  <label for="where did you here from us?"
-                    >where did you here from us?</label
-                  ><br />
-                  <select id="Meals" name="Meals">
-                    <option value="please chhose one option:">
-                      please chhose one option:
-                    </option>
-                    <option value="Friends and Family">
-                      Friend and Family
-                    </option>
-                    <option value="Youtube video">Youtube video</option>
-                    <option value="Podcast">Podcast</option>
-                    <option value="Facebook ad">Facebook ad</option>
-                    <option value="others">others</option>
-                  </select>
-                </div>
-                <div>
-                  <button class="btn-signup">Sign up now</button>
-                </div>
-              </div>
-            </div>
-          </form> -->
         </div>
-        <!-- <div> -->
+
         <img src="eating-women.jpg" class="girl-eating" />
-        <!-- </div> -->
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="contact-us-wrapper">
-          <div class="img-div">
-            <img src="omnifood-logo (1).png" class="img-footer" />
+    <section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="contact-us-wrapper">
+            <div class="img-div">
+              <img src="omnifood-logo (1).png" class="img-footer" />
+            </div>
+            <div class="social-links">
+              <img src="instagram-color-svgrepo-com.svg" class="social-icon" />
+              <img src="facebook-circle-svgrepo-com.svg" class="social-icon" />
+              <img src="twitter-svgrepo-com.svg" class="social-icon" />
+            </div>
+            <p class="copyright">
+              Copyright © 2025 by Omnifood, Inc. All rights reserved.
+            </p>
           </div>
-          <div class="social-links">
-            <img src="instagram-color-svgrepo-com.svg" class="social-icon" />
-            <img src="facebook-circle-svgrepo-com.svg" class="social-icon" />
-            <img src="twitter-svgrepo-com.svg" class="social-icon" />
-          </div>
-          <p class="copyright">
-            Copyright © 2025 by Omnifood, Inc. All rights reserved.
+        </div>
+        <div class="footer-content">
+          <h1>Contact us</h1>
+          <p class="for-color">
+            623 Harrison St., 2nd Floor, San Francisco, CA 94107
+          </p>
+          <p class="for-color">
+            415-201-6370 <br />
+            hello@omnifood.com
           </p>
         </div>
-      </div>
-      <div class="footer-content">
-        <h1>Contact us</h1>
-        <p class="for-color">
-          623 Harrison St., 2nd Floor, San Francisco, CA 94107
-        </p>
-        <p class="for-color">
-          415-201-6370 <br />
-          hello@omnifood.com
-        </p>
-      </div>
-      <div class="footer-content">
-        <h1>Account</h1>
-        <p class="footer-links">
-          <a href="Create Account" class="footer-links">Create Account</a>
-        </p>
-        <p class="footer-links" class="for-color">
-          <a href="Sign in">Sign in</a>
-        </p>
-        <p class="footer-links">
-          <a href="iOS app">iOS app</a>
-        </p>
-        <p class="footer-links">
-          <a href="Android app">Android app</a>
-        </p>
-      </div>
-      <div class="footer-content">
-        <h1>Company</h1>
-        <p class="footer-links">
-          <a href="About Omnifood">About Omnifood</a>
-        </p>
-        <p class="footer-links">
-          <a href="For Business">For Business</a>
-        </p>
-        <p class="footer-links">
-          <a href="Cooking Partner">Cooking Partner</a>
-        </p>
-        <p class="footer-links">
-          <a href="Careers">Careers</a>
-        </p>
-      </div>
-      <div class="footer-content">
-        <h1>Resources</h1>
-        <p class="footer-links">
-          <a href="Recipy directory">Recipy directory</a>
-        </p>
-        <p class="footer-links">
-          <a href="Help center">Help center</a>
-        </p>
-        <p class="footer-links">
-          <a href="Pricavy & terms">Pricavy & terms</a>
-        </p>
-      </div>
-    </footer>
+        <div class="footer-content">
+          <h1>Account</h1>
+          <p class="footer-links">
+            <a href="Create Account" class="footer-links">Create Account</a>
+          </p>
+          <p class="footer-links" class="for-color">
+            <a href="Sign in">Sign in</a>
+          </p>
+          <p class="footer-links">
+            <a href="iOS app">iOS app</a>
+          </p>
+          <p class="footer-links">
+            <a href="Android app">Android app</a>
+          </p>
+        </div>
+        <div class="footer-content">
+          <h1>Company</h1>
+          <p class="footer-links">
+            <a href="About Omnifood">About Omnifood</a>
+          </p>
+          <p class="footer-links">
+            <a href="For Business">For Business</a>
+          </p>
+          <p class="footer-links">
+            <a href="Cooking Partner">Cooking Partner</a>
+          </p>
+          <p class="footer-links">
+            <a href="Careers">Careers</a>
+          </p>
+        </div>
+        <div class="footer-content">
+          <h1>Resources</h1>
+          <p class="footer-links">
+            <a href="Recipy directory">Recipy directory</a>
+          </p>
+          <p class="footer-links" id="help-center">
+            <a href="Help center">Help center</a>
+          </p>
+          <p class="footer-links">
+            <a href="Pricavy & terms">Pricavy & terms</a>
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script>
+      // function myfunction() {
+      //   document.getElementById("font").innerHTML = "pargraph changed";
+      // }
+      document.getElementById("name");
+      document.write(5 + 6);
+      const price1 = 12;
+      const price2 = 34;
+      let total = price1 + price2;
+      document.getElementById("font").innerHTML =
+        "the total is the :   " + total;
+      // const pi = 3.14;
+      // let person = "Usama";
+      // let answer = "Strong";
+      // document.getElementById("font").innerHTML = p1 + person + answer;
+      // let carName = "Civic";
+      // document.getElementById("font").innerHTML = carName;
+      // let carName;
+      // document.getElementById("font").innerHTML = carName;
+      // let x = 2 + 4 + 5 + 6;
+      // document.getElementById("font").innerHTML = x;
+      // let y = "Usama" + " " + "Khalid";
+      // document.getElementById("font").innerHTML = y;
+      // let g = 2 + 3 + "4";
+      // document.getElementById("font").innerHTML = g;
+      // let $$ = 2;
+      // let $myMoney = 3;
+      // document.getElementById("font").innerHTML = $$ + $myMoney;
+      // const cars = ["civic", "honda", "toyota"];
+      // cars[0] = "Vagonar";
+      // cars.push("Audi");
+      // document.getElementById("font").innerHTML = cars;
+    </script>
   </body>
 </html>
